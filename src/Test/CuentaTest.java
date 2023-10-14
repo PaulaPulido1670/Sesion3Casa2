@@ -8,19 +8,19 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import pkg.Cuentas;
+import pkg.Cuenta;
 
 
 
 class CuentaTest {
 	
-	static Cuentas aux;
-	static Cuentas aux1;
+	static Cuenta aux;
+	static Cuenta aux1;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		aux=new Cuentas("12345", "Manuel" , 50);
-		aux1=new Cuentas("67890", "Levi" , 0);
+		aux=new Cuenta("12345", "Manuel" , 50);
+		aux1=new Cuenta("67890", "Levi" , 0);
 	}
 
 	@AfterAll
