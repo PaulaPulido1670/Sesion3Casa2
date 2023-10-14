@@ -37,7 +37,7 @@ public class Cuenta {
 		if(this.getSaldo()-i>-500) {
 			this.setSaldo(this.getSaldo()-i);
 			
-		}else System.out.print("Error , su saldo no puede ser menor de 500");
+		}else System.out.print("Error , su saldo no puede ser menor de 500\n");
 		
 	}
 

@@ -50,7 +50,7 @@ class CuentaTest {
 		aux.retirar(0);
 		assertEquals(aux.getSaldo() ,0 );
 	}*/
-	@Test
+/*	@Test
 	void testreintegro200auxprimer() throws Exception {
 		aux.retirar(200);
 		assertEquals(aux.getSaldo() ,-150 );
@@ -89,6 +89,24 @@ class CuentaTest {
 	void testreintegro100aux1() throws Exception {
 		aux1.retirar(100);
 		assertEquals(aux1.getSaldo() ,-50 );
+	}*/
+	
+	@Test
+	void test14() {
+		System.out.println("Cuenta 67890");
+		aux1.retirar(350);
+		aux1.retirar(200);
+		aux1.retirar(150);
+		aux1.ingresar(50);
+		assertEquals(-450, aux1.getSaldo());
+	}
+	@Test
+	void test15() {
+		System.out.println("Cuenta 12345");
+		aux.retirar(200);
+		aux.ingresar(100);
+		aux.retirar(200);
+		assertEquals(-250, aux.getSaldo());
 	}
 
 }
